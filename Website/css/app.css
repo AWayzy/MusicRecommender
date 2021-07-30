@@ -1,0 +1,190 @@
+
+body {
+    font-family: sans-serif;
+    background-color: #1DB954;
+    text-align: center;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Montserrat-Bold.ttf);
+ }
+ 
+
+
+* {
+    font-family: myFirstFont;
+    box-sizing: border-box;
+}
+h1 {
+    color: black;
+    font-family: myFirstFont;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h5 {
+    font-family: myFirstFont;
+    text-align: center;
+    font-size: 15px;
+
+}
+div.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+#overAllList {
+    display: grid;
+    grid: auto / 65fr 35fr;
+    grid-template-columns: "songlist", "playlist";
+    grid-column-gap: 20px;
+}
+
+#songList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: "songlist";
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+#playList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-area: "playlist";
+    grid-gap: 20px;
+    background-color: #eaeaea;
+    margin-top: 50px;
+    align-content: flex-start;
+
+}
+
+.song {
+    grid-area: "songlist";
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    text-align: left;
+    grid-template-areas: "text", "button";
+    grid-template-columns: 7fr 3fr;
+    grid-row-gap: 20px;
+    grid-gap: 10px;
+    grid: 1fr / 15fr 1fr;
+    height: 4%;
+    vertical-align: top;
+}
+
+.song > h1 {
+    text-align: center;
+    font-size: 25px;
+    grid-area: "text";
+}
+
+.song > h2 {
+    text-align: left;
+    font-size: 15px;
+    grid-area: "text";
+}
+
+.song > h3 {
+    text-align: center;
+    font-size: 10px;
+    grid-area: "text";
+}
+
+.song > button {
+    text-align: center;
+    grid-area: "button";
+}
+
+
+.character {
+    grid-area: "songlist";
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    text-align: left;
+    grid-template-columns: "text", "button";
+    grid-row-gap: 20px;
+    grid-gap: 10px;
+    grid: 1fr / 15fr 1fr
+
+}
+
+.character > h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    grid-area: "text";
+}
+
+.character2 > h1 {
+    vertical-align: middle;
+    grid-area: "text";
+}
+
+.character > p {
+    grid-area: "text";
+    margin: 0;
+    margin-top: -18px;
+    grid-column-start: 1;
+}
+
+
+.character > button{
+    width: 75px;
+    grid-area: "button";
+    text-align: center;
+    margin-top: -50px
+}
+
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#gotchuButton {
+
+    margin-top: 10px;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+#header {
+    text-align: center;
+}
+
+#searchArea {
+    text-align: center;
+
+}
+
+.character2 {
+    background-color: #1DB954;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    text-align: left;
+    grid-template-columns: "text", "button";
+    grid-row-gap: 20px;
+    grid-gap: 10px;
+    grid: 1fr / 15fr 1fr
+
+}
