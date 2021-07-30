@@ -1,0 +1,97 @@
+
+body {
+    font-family: sans-serif;
+    background-color: #1DB954;
+    text-align: center;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../Montserrat-Bold.ttf);
+ }
+ 
+
+
+* {
+    font-family: myFirstFont;
+    box-sizing: border-box;
+}
+h1 {
+    color: black;
+    font-family: myFirstFont;
+    margin-bottom: 30px;
+    text-align: center;
+}
+div.container {
+    padding: 40px;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+
+#songList {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.character {
+    list-style-type: none;
+    background-color: #eaeaea;
+    border-radius: 3px;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: auto;
+    text-align: left;
+    grid-row-gap: 20px;
+}
+
+.character > h2 {
+    margin-bottom: 20px;
+}
+
+.character > p {
+    margin: 0;
+    margin-top: -18px;
+}
+
+.character > img {
+    max-height: 100px;
+    grid-area: image;
+}
+
+#searchBar {
+    width: 100%;
+    height: 32px;
+    border-radius: 3px;
+    border: 1px solid #eaeaea;
+    font-size: 12px;
+}
+
+#searchWrapper {
+    position: relative;
+}
+
+#gotchuButton {
+
+    margin-top: 10px;
+}
+
+#searchWrapper::after {
+    content: '🔍';
+    position: absolute;
+    top: 7px;
+    right: 15px;
+}
+
+#header {
+    text-align: center;
+}
+
+#searchArea {
+    text-align: center;
+
+}
