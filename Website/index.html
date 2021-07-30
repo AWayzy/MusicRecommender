@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Music Recommendation</title>
+    <link rel="stylesheet" href="./css/app.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div id="header">
+            <img id="recommend">
+            <h1>ECS 171 Song Recommender</h1>
+            <h5>Search through our list of songs and add the ones you like to your playlist,<br> then click <i>Done!</i> to be shown some songs you might like!</h5>
+        </div>
+
+        <div id="searchArea">
+            <div id="searchBar">
+                <input type="text" name="searchBar" id="searchBar" placeholder="Enter the Name of a Song">
+                <button type="button" id="gotchuButton">Done!</button>
+            </div>
+        </div>
+        <ul id="overAllList">
+            <ul id="songList"></ul>
+            <ul id="playList"></ul>
+        </ul>
+    </div>
+    <script src="/app.js"></script>
+</body>
+
+</html>
